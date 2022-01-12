@@ -30,5 +30,6 @@ R:
      
 6) Why are flowcharts important to us as developers?
 
+R:
 Flowcharts are important because they will allow us to have a structure and a set of steps that our algorithm should take by making it easier to read and understanding when we want to create our code.
 
