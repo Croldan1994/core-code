@@ -1,6 +1,6 @@
 # core-code
 Core Code bootcamp
-**//Tuesday Assignments
+<h1>//Tuesday Assignments</h1>
 
 1) Video has been watched
 
