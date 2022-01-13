@@ -78,7 +78,11 @@ Then we put the remainders together in reverse order: 11111001010(2) and that wo
 
 Hexadecimal:
 
+1994 / 16 = 124 with remainder 10 (A)
+124 / 16 = 7 with remainder 12 (C)
+7 / 16 = 0 with remainder 7
 
+So 1994(10) would be 7CA in hexadecimal. 
 
 
 
