@@ -84,7 +84,29 @@ Hexadecimal:
 
 So 1994(10) would be 7CA in hexadecimal. 
 
+3. Translate 51966 into hexadecimal and binary
 
+51966 to binary: 
+
+51966/2 = 25983, remainder is 0
+25983/2 = 12991, remainder is 1
+12991/2 = 6495, remainder is 1
+6495/2 = 3247, remainder is 1
+3247/2 = 1623, remainder is 1
+1623/2 = 811, remainder is 1
+811/2 = 405, remainder is 1
+405/2 = 202, remainder is 1
+202/2 = 101, remainder is 0
+101/2 = 50, remainder is 1
+50/2 = 25, remainder is 0
+25/2 = 12, remainder is 1
+12/2 = 6, remainder is 0
+6/2 = 3, remainder is 0
+3/2 = 1, remainder is 1
+1/2 = 0, remainder is 1
+
+
+51966 to hexadecimal: 
 
 
 
