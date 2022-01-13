@@ -56,6 +56,31 @@ Then we start at 0 again but we add 1 on the left.
 
 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 1A, 1B, and so on until 1F. Then we start from 0 and add 1 to the left one more time 20, 21, and so on. 
 
+2. Translate the year you where born to binary, decimal and hexadecimal
+
+The year I was born: 1994 
+
+Decimal: 1994 
+
+Binary:  1994 / 2 = 997 with 0 remainder
+997 / 2 = 498 with 1 remainder
+498 / 2 = 249 with 0 remainder
+249 / 2 = 124 with 1 remainder
+124 / 2 = 62 with 0 remainder
+62 / 2 = 31 with 0 remainder
+31 / 2 = 15 with 1 remainder
+15 / 2 = 7 with 1 remainder
+7 / 2 = 3 with 1 remainder
+3 / 2 = 1 with 1 remainder
+1 / 2 = 0 with 1 remainder
+
+Then we put the remainders together in reverse order: 11111001010(2) and that would be the binary of 1994 which is my date of birth. 
+
+Hexadecimal:
+
+
+
+
 
 
 
