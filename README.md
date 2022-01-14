@@ -111,6 +111,17 @@ So 1994(10) would be 7CA in hexadecimal.
 
 
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 
+<h1>Thursday Assignments.</h1>
+
+1. Search for real word applications of Javascript
+
+<p>R//
+
+- It is mainly used for making websites interactive by adding behavior to web pages. 
+- It can also develop web servers and web applications as well. 
+- It can also be used to create videogames. 
+- It can also be used to develop software and also that programs flying robots</p>
 
 
