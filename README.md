@@ -103,10 +103,22 @@ So 1994(10) would be 7CA in hexadecimal.
 12/2 = 6, remainder is 0
 6/2 = 3, remainder is 0
 3/2 = 1, remainder is 1
-1/2 = 0, remainder is 1
+1/2 = 0, remainder is 1</p>
 
 
-51966 to hexadecimal: </p>
+
+51966 to hexadecimal: 
+
+Hexadecimal numbers have a 16 base. So in order to convert from decimal to hexadecimal we must divide the number until the remainder is 0. 
+
+This is how it's done. 
+
+(51966/16 = 3247) Remainder: 14.  The position of 14 in the hexadecimal base is E
+(3247/16 = 202)   Remainder: 15.  The position of 15 in the hexadecimal base is F
+(202/16 = 12)     Remainder: 10   The position of 15 in the hexadecimal base is A
+(12/16 = 0)       Remainder: 12   The position of 15 in the hexadecimal base is C
+
+We would start from the bottom to the top to get the number in hexadecimal and the final result is <b>CAFE(16)</b>
 
 5. Base on the examples and the guide of the low-level language: 
  
@@ -138,7 +150,7 @@ So 1994(10) would be 7CA in hexadecimal.
 
 ![image](https://user-images.githubusercontent.com/88641189/149584337-1ba9b7ee-6c27-4ef3-932c-dab0737bf074.png)
 
-##Codigo: 
+#Codigo: 
 
 .data
       message: .asciiz "\nMi Nombre es: Carlos"
@@ -166,6 +178,6 @@ So 1994(10) would be 7CA in hexadecimal.
 - It is mainly used for making websites interactive by adding behavior to web pages. 
 - It can also develop web servers and web applications as well. 
 - It can also be used to create videogames. 
-- It can also be used to develop software and also that programs flying robots</p>
+- It can also be used to develop software that programs flying robots</p>
 
 
