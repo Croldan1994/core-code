@@ -40,15 +40,15 @@ Flowcharts are important because they will allow us to have a structure and a se
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Wednesday Assignments 
+<h1>Wednesday Assignments</h1>
 
 1. Learn about Decimal, Binary and hexadecimal numbers. 
 
-Binary numbers: Binary numbers are base "2" numbers. They are composed by 0 and 1. We start counting at 0, then 1, then you run out of digits ... so we start back at 0 again, but increase the number on the left by 1.
+<p>Binary numbers: Binary numbers are base "2" numbers. They are composed by 0 and 1. We start counting at 0, then 1, then you run out of digits ... so we start back at 0 again, but increase the number on the left by 1.</p>
 
-Decimal numbers: Decimal numbers are base 10 numbers. They start from 0 to 9 but don't include the number 10. After the number 9, we run out of digits. Every digit in a decimal number has a "position", and the decimal point helps us to know which position is which. The position just to the left of the point is the "Ones" position. If we see a "7" there we know it means 7 ones. Every position further to the left is 10 times bigger, and every position further to the right is 10 times smaller. But notice something interesting: there is no symbol for "ten". "10" is actually two symbols put together, a "1" and a "0". 
+<p>Decimal numbers: Decimal numbers are base 10 numbers. They start from 0 to 9 but don't include the number 10. After the number 9, we run out of digits. Every digit in a decimal number has a "position", and the decimal point helps us to know which position is which. The position just to the left of the point is the "Ones" position. If we see a "7" there we know it means 7 ones. Every position further to the left is 10 times bigger, and every position further to the right is 10 times smaller. But notice something interesting: there is no symbol for "ten". "10" is actually two symbols put together, a "1" and a "0".</p> 
 
-Hexadecimal numbers: Hexadecimal numbers have 16 numbers. They look the same as the decimal numbers up to 9, but then there are the letters ("A',"B","C","D","E","F") in place of the decimal numbers 10 to 15. So a single Hexadecimal digit can show 16 different values instead of the normal 10. 
+<p>Hexadecimal numbers: Hexadecimal numbers have 16 numbers. They look the same as the decimal numbers up to 9, but then there are the letters ("A',"B","C","D","E","F") in place of the decimal numbers 10 to 15. So a single Hexadecimal digit can show 16 different values instead of the normal 10.</p> 
 
 Example: 0 1 2 3 4 5 6 7 8 9 A B C D E F, 
 
@@ -58,7 +58,7 @@ Then we start at 0 again but we add 1 on the left.
 
 2. Translate the year you where born to binary, decimal and hexadecimal
 
-The year I was born: 1994 
+<p>The year I was born: 1994 
 
 Decimal: 1994 
 
@@ -74,9 +74,9 @@ Binary:  1994 / 2 = 997 with 0 remainder
 3 / 2 = 1 with 1 remainder
 1 / 2 = 0 with 1 remainder
 
-Then we put the remainders together in reverse order: 11111001010(2) and that would be the binary of 1994 which is my date of birth. 
+Then we put the remainders together in reverse order: 11111001010(2) and that would be the binary of 1994 which is my date of birth.</p>
 
-Hexadecimal:
+<p>Hexadecimal:
 
 1994 / 16 = 124 with remainder 10 (A)
 124 / 16 = 7 with remainder 12 (C)
@@ -106,14 +106,15 @@ So 1994(10) would be 7CA in hexadecimal.
 1/2 = 0, remainder is 1
 
 
-51966 to hexadecimal: 
-
+51966 to hexadecimal: </p>
 
 5. Base on the examples and the guide of the low-level language: 
  
 5.1 Create a program to add two numbers given by the user 
 
 ![image](https://user-images.githubusercontent.com/88641189/149583086-16db3262-fb2f-4bf4-8530-cb2c2169b868.png)
+
+##Codigo
 
 .data
 	result_message: .asciiz "\nEl resultado es: "
@@ -137,7 +138,7 @@ So 1994(10) would be 7CA in hexadecimal.
 
 ![image](https://user-images.githubusercontent.com/88641189/149584337-1ba9b7ee-6c27-4ef3-932c-dab0737bf074.png)
 
-Codigo: 
+##Codigo: 
 
 .data
       message: .asciiz "\nMi Nombre es: Carlos"
