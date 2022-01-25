@@ -187,7 +187,7 @@ WEEK 3
 <h1>Monday Assignments</h1>
 
 1. Codewars solution: Who likes this? 
-function likes(names) {
+<p>function likes(names) {
   if (names.length == 0) {
     return "no one likes this";
   } else if (names.length == 1) {
@@ -199,7 +199,7 @@ function likes(names) {
   } else {
     return names[0] + ", " + names[1] + " and " + (names.length - 2) + " others like this";
   }
-}
+}</p>
 
 
 
