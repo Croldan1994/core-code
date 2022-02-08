@@ -202,6 +202,10 @@ WEEK 3
 }</p>
 
 
+<h1>Mission statement</h1>
+
+<p>My name is Carlos and I'm a front end developer. I am self taught and I currently work with the following tech stack: HTML, CSS, Javascript, NodeJS for backend, React. I've been building modern websites for over a year now and I am so thrilled to work in the tech industry. Perseverance and discipline are able to get you anywhere you want, that's my main motto.</p>
+
 
 
 
