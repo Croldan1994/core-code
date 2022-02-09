@@ -169,7 +169,7 @@ We would start from the bottom to the top to get the number in hexadecimal and t
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
-<h1>Thursday Assignments.</h1>
+<h1>Week challenges  Thursday Assignments.</h1>
 
 1. Search for real word applications of Javascript
 
@@ -181,6 +181,39 @@ We would start from the bottom to the top to get the number in hexadecimal and t
 - It can also be used to develop software that programs flying robots</p>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+WEEK 2 challenges 
+
+<h1>Monday</h1>
+
+1. Finished Git course. https://classroom.udacity.com/courses/ud123
+2. Finished Data Types video: https://www.youtube.com/watch?v=A37-3lflh8I
+3. Read the article about basic operations: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math
+4. Created my codewars profile: https://www.codewars.com/users/Croldan1994
+
+
+<h1>Week challenges Tuesday</h1>
+
+1. Watched video on how to google as a software engineer: https://www.youtube.com/watch?v=cEBkvm0-rg0
+2. https://www.codewars.com/kata/50654ddff44f800200000004 
+
+![image](https://user-images.githubusercontent.com/88641189/153101528-889aed1c-94e3-44a3-8457-e9ae94747c28.png)
+
+3. https://www.codewars.com/kata/572b6b2772a38bc1e700007a/train/javascript
+
+![image](https://user-images.githubusercontent.com/88641189/153103042-e9d19497-0165-4bcf-8894-2e4a20e31bae.png)
+
+4. https://www.codewars.com/kata/55ad04714f0b468e8200001c/train/javascript
+
+![image](https://user-images.githubusercontent.com/88641189/153103206-9e06f2e6-3f9a-47f4-93d9-a762ad66cd05.png)
+
+5. https://www.codewars.com/kata/5ad0d8356165e63c140014d4/train/javascript
+
+![image](https://user-images.githubusercontent.com/88641189/153103418-80a0b73a-8b56-49bb-a72c-197b59bba9a4.png)
+
+
+
+
 
 WEEK 3 
 
