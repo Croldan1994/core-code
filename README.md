@@ -258,7 +258,7 @@ WEEK 2 challenges
 
 
 
-WEEK 3 
+# WEEK 3 
 
 
 # Week challenges (Monday) 💻
@@ -270,22 +270,71 @@ WEEK 3
 # Week challenges (Tuesday) 💻
 
 1.https://www.codewars.com/kata/55c45be3b2079eccff00010f
+
 2.https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1
+
 3.https://www.codewars.com/kata/520b9d2ad5c005041100000f
 
 # Week challenges (Wednesday) 💻
 
 1.https://www.codewars.com/kata/52774a314c2333f0a7000688
+
 2.https://www.codewars.com/kata/517abf86da9663f1d2000003
+
 3.https://www.codewars.com/kata/54e6533c92449cc251001667
 
 # Week challenges (Thursday) 💻
 
 1.https://www.codewars.com/kata/57ea70aa5500adfe8a000110
+
 2.https://www.codewars.com/kata/5848565e273af816fb000449
+
 3.https://www.codewars.com/kata/53368a47e38700bd8300030d
 
+4. ✨Complete your 2nd Core Challenge. This is one of the requirements for the certification, where you'll boost your dev professional-brand.
 
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+## WEEK 4
+
+
+Week challenges (Monday) 💻
+
+1. Check this video
+2. Follow this video
+3. Follow this guide
+4. Check this video
+5. Follow this video
+6. Check this video
+
+Week challenges (Tuesday) 💻
+
+1. This link is nice to have and read
+2. Typescript object type
+3. Read this
+4. Typescript union types
+5. Typescript in operator
+6. Find the odd int
+7. Stop gninnipS My sdroW!
+
+Week challenges (Wednesday) 💻
+1. Array.diff
+2. Create Phone Number
+3.Watch this
+4. Watch this
+5. Read this
+6. Read this
+7. Read this
+
+Week challenges (Thursday) 💻
+
+1. Detect Pangram
+2. Find the missing letter
+3. Find the unique number
+4. Reverse or rotate?
+5. What's Your Poison?
+
+6. ✨Complete your 3rd Core Challenge. This is one of the requirements for the certification, where you'll boost your dev professional-brand.
 
 
 
