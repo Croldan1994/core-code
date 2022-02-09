@@ -192,7 +192,7 @@ WEEK 2 challenges
 4. Created my codewars profile: https://www.codewars.com/users/Croldan1994
 
 
-<h1>Week challenges Tuesday</h1>
+<h1>Tuesday</h1>
 
 1. Watched video on how to google as a software engineer: https://www.youtube.com/watch?v=cEBkvm0-rg0
 2. https://www.codewars.com/kata/50654ddff44f800200000004 
@@ -211,6 +211,49 @@ WEEK 2 challenges
 
 ![image](https://user-images.githubusercontent.com/88641189/153103418-80a0b73a-8b56-49bb-a72c-197b59bba9a4.png)
 
+
+<h2>Wednesday</h2>
+
+1. https://www.codewars.com/kata/57e92e91b63b6cbac20001e5/train/javascript
+
+![image](https://user-images.githubusercontent.com/88641189/153104755-f124c4ce-77e4-46df-96e0-6cf7c4d30cb0.png)
+
+
+2. https://www.codewars.com/kata/5b853229cfde412a470000d0/train/javascript
+
+![image](https://user-images.githubusercontent.com/88641189/153106138-f3b0809f-a45f-4699-9802-151887409ee2.png)
+
+3. https://www.codewars.com/kata/5f77d62851f6bc0033616bd8
+
+![image](https://user-images.githubusercontent.com/88641189/153106323-bceb3876-d1bc-4a25-880e-72ec74ff4cc4.png)
+
+4. https://www.codewars.com/kata/57eae65a4321032ce000002d
+
+![image](https://user-images.githubusercontent.com/88641189/153106442-63efb418-b1aa-49bb-bdf8-06470f09fe18.png)
+
+<h2>Thursday</h2>
+
+1. https://www.codewars.com/kata/57faece99610ced690000165/train/javascript
+
+![image](https://user-images.githubusercontent.com/88641189/153106681-b21ab1ee-771a-496f-be5b-5af4ead84364.png)
+
+2. https://www.codewars.com/kata/5547929140907378f9000039
+
+![image](https://user-images.githubusercontent.com/88641189/153107036-ffa7d863-bbd8-4395-890b-5de2cd5afad8.png)
+
+3. https://www.codewars.com/kata/5672a98bdbdd995fad00000f/train/javascript 
+
+![image](https://user-images.githubusercontent.com/88641189/153109551-179d7337-ef4e-4997-9c5d-998239d34ea9.png)
+
+4. https://www.codewars.com/kata/5672a98bdbdd995fad00000f/train/javascript
+
+![image](https://user-images.githubusercontent.com/88641189/153109946-57bdbd87-4b32-455f-8de1-590902d482a6.png)
+
+
+<h1>Mission statement</h1>
+
+<p>My name is Carlos and I'm a front end developer. I am self taught and I currently work with the following tech stack: HTML, CSS, Javascript, NodeJS for backend, React. I've been building modern websites for over a year now and I am so thrilled to work in the tech industry. Perseverance and discipline are able to get you anywhere you want, that's my main motto.</p>
+ 
 
 
 
@@ -235,9 +278,7 @@ WEEK 3
 }</p>
 
 
-<h1>Mission statement</h1>
 
-<p>My name is Carlos and I'm a front end developer. I am self taught and I currently work with the following tech stack: HTML, CSS, Javascript, NodeJS for backend, React. I've been building modern websites for over a year now and I am so thrilled to work in the tech industry. Perseverance and discipline are able to get you anywhere you want, that's my main motto.</p>
 
 
 
