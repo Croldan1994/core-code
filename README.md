@@ -1,5 +1,8 @@
 # core-code
 Core Code bootcamp
+
+<a href = "#WEEK 1">Week 1</a># WEEK 1
+
 <h1>Tuesday Assignments</h1>
 
 1) Video has been watched
@@ -40,7 +43,7 @@ Flowcharts are important because they will allow us to have a structure and a se
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-<h1>Wednesday Assignments</h1>
+<><h1>Wednesday Assignments</h1>
 
 1. Learn about Decimal, Binary and hexadecimal numbers. 
 
@@ -182,7 +185,9 @@ We would start from the bottom to the top to get the number in hexadecimal and t
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-WEEK 2 challenges 
+<a href = "#WEEK 2"># WEEK 2 challenges</a>
+
+# WEEK 2 challenges 
 
 <h1>Monday</h1>
 
@@ -300,18 +305,18 @@ WEEK 2 challenges
 
 Week challenges (Monday) 💻
 
-1. Check this video
-2. Follow this video
-3. Follow this guide
-4. Check this video
-5. Follow this video
-6. Check this video
+1. I watched this video on regular expressions from fireship
+2. Watched and followed video from free code camp on regex.
+3. I watched guide from dev.to on regular expressions 
+4. I watched video on promises from fireship: https://www.youtube.com/watch?v=RvYYCGs45L4
+5. I watched video on web dev simplified about promises: https://www.youtube.com/watch?v=DHvZLI7Db8E
+6. I watched this video on async/await on javascript: https://www.youtube.com/watch?v=rKK1q7nFt7M
 
 Week challenges (Tuesday) 💻
 
-1. This link is nice to have and read
-2. Typescript object type
-3. Read this
+1. This link is nice to have and read: Read the typescript handbook https://www.typescriptlang.org/docs/handbook/intro.html
+2. Typescript object type: https://typescript-exercises.github.io/#exercise=1  Finished the first typescript exercise. 
+3. Read this 
 4. Typescript union types
 5. Typescript in operator
 6. Find the odd int
