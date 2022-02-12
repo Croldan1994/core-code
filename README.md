@@ -379,7 +379,7 @@ function isPangram(string){
 return true; 
 }
 ```
-3. Find the missing letter
+2. Find the missing letter
 ``` javascript
 
 function findMissingLetter(array) {
@@ -387,7 +387,7 @@ function findMissingLetter(array) {
 }
 ``` 
 
-5. Find the unique number
+3. Find the unique number
 ``` javascript
 
 function findUniq(arr) {
@@ -396,7 +396,7 @@ function findUniq(arr) {
   return (arr[0] !== arr[1]) ?  arr[0] : arr.pop()
 }
 ```
-7. Reverse or rotate?
+4. Reverse or rotate?
 ``` javascript
 
 function revrot(str, sz) {
@@ -411,7 +411,7 @@ function revrot(str, sz) {
 }
 ``` 
 
-9. What's Your Poison?
+5. What's Your Poison?
 ``` javascript
 
 function find(rats) {
