@@ -185,8 +185,6 @@ We would start from the bottom to the top to get the number in hexadecimal and t
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-<a href = "#WEEK 2"># WEEK 2 challenges</a>
-
 # WEEK 2 challenges 
 
 <h1>Monday</h1>
@@ -200,61 +198,96 @@ We would start from the bottom to the top to get the number in hexadecimal and t
 <h1>Tuesday</h1>
 
 1. Watched video on how to google as a software engineer: https://www.youtube.com/watch?v=cEBkvm0-rg0
-2. https://www.codewars.com/kata/50654ddff44f800200000004 
+2. [Multiply](https://www.codewars.com/kata/50654ddff44f800200000004)
 
-![image](https://user-images.githubusercontent.com/88641189/153101528-889aed1c-94e3-44a3-8457-e9ae94747c28.png)
+Solution: 
+``` javascript
+function multiply(a, b){
+  a * b
+}
+```
 
-3. https://www.codewars.com/kata/572b6b2772a38bc1e700007a/train/javascript
+3. [ASCII Total](https://www.codewars.com/kata/572b6b2772a38bc1e700007a)
+``` javascript
+function uniTotal (string) {
+// total up dem unicodes!
+  let count = 0;
+  for (let i = 0; i < string.length; i++) {
+    count += string.charCodeAt (i);
+  }
+  return count;
+}
+``` 
 
-![image](https://user-images.githubusercontent.com/88641189/153103042-e9d19497-0165-4bcf-8894-2e4a20e31bae.png)
+4. [get character from ASCII Value](https://www.codewars.com/kata/55ad04714f0b468e8200001c)
+``` javascript
+function getChar(b){
+  // ...
+  return String.fromCharCode (b);
+}
+ ```
+4.[Binary Addition](https://www.codewars.com/kata/551f37452ff852b7bd000139/train/javascript)
+``` javascript
+function addBinary( a, b ){
+  //variable sum
+  var sum = a + b, binary = ''; while ( sum > 0 ) 
+{ binary = ( sum % 2 ) + binary; sum = Math.floor( sum / 2 ); }
+ return binary; 
+}
+```
+5. [Student's Final Grade](https://www.codewars.com/kata/5ad0d8356165e63c140014d4/train/javascript)
 
-4. https://www.codewars.com/kata/55ad04714f0b468e8200001c/train/javascript
-
-![image](https://user-images.githubusercontent.com/88641189/153103206-9e06f2e6-3f9a-47f4-93d9-a762ad66cd05.png)
-
-5. https://www.codewars.com/kata/5ad0d8356165e63c140014d4/train/javascript
-
-![image](https://user-images.githubusercontent.com/88641189/153103418-80a0b73a-8b56-49bb-a72c-197b59bba9a4.png)
+``` javascript
+function finalGrade (exam, projects) {
+  // final grade
+  if (exam > 90 || projects > 10)
+  {
+   return 100; 
+  }
+else if (exam > 75 && projects >= 5)
+{
+  return 90;
+  }
+else if (exam > 50 && projects >= 2)
+  {
+    return 75;
+  }
+else 
+{ return 0;
+  }
+}
+```
 
 
 <h2>Wednesday</h2>
 
-1. https://www.codewars.com/kata/57e92e91b63b6cbac20001e5/train/javascript
+1.[](https://www.codewars.com/kata/57e92e91b63b6cbac20001e5/train/javascript)
+``` javascript
 
-![image](https://user-images.githubusercontent.com/88641189/153104755-f124c4ce-77e4-46df-96e0-6cf7c4d30cb0.png)
-
-
-2. https://www.codewars.com/kata/5b853229cfde412a470000d0/train/javascript
-
-![image](https://user-images.githubusercontent.com/88641189/153106138-f3b0809f-a45f-4699-9802-151887409ee2.png)
-
-3. https://www.codewars.com/kata/5f77d62851f6bc0033616bd8
-
-![image](https://user-images.githubusercontent.com/88641189/153106323-bceb3876-d1bc-4a25-880e-72ec74ff4cc4.png)
-
-4. https://www.codewars.com/kata/57eae65a4321032ce000002d
-
-![image](https://user-images.githubusercontent.com/88641189/153106442-63efb418-b1aa-49bb-bdf8-06470f09fe18.png)
-
+```
+2.[](https://www.codewars.com/kata/5b853229cfde412a470000d0/train/javascript)
+``` javascript
+```
+3.[](https://www.codewars.com/kata/5f77d62851f6bc0033616bd8)
+``` javascript
+```
+4. [](https://www.codewars.com/kata/57eae65a4321032ce000002d)
+``` javascript
+```
 <h2>Thursday</h2>
 
-1. https://www.codewars.com/kata/57faece99610ced690000165/train/javascript
-
-![image](https://user-images.githubusercontent.com/88641189/153106681-b21ab1ee-771a-496f-be5b-5af4ead84364.png)
-
-2. https://www.codewars.com/kata/5547929140907378f9000039
-
-![image](https://user-images.githubusercontent.com/88641189/153107036-ffa7d863-bbd8-4395-890b-5de2cd5afad8.png)
-
-3. https://www.codewars.com/kata/5672a98bdbdd995fad00000f/train/javascript 
-
-![image](https://user-images.githubusercontent.com/88641189/153109551-179d7337-ef4e-4997-9c5d-998239d34ea9.png)
-
-4. https://www.codewars.com/kata/5672a98bdbdd995fad00000f/train/javascript
-
-![image](https://user-images.githubusercontent.com/88641189/153109946-57bdbd87-4b32-455f-8de1-590902d482a6.png)
-
-
+1.[](https://www.codewars.com/kata/57faece99610ced690000165/train/javascript)
+``` javascript
+```
+2. [](https://www.codewars.com/kata/5547929140907378f9000039)
+``` javascript
+```
+3. [](https://www.codewars.com/kata/5672a98bdbdd995fad00000f/train/javascript) 
+``` javascript
+```
+4. [](https://www.codewars.com/kata/5672a98bdbdd995fad00000f/train/javascript)
+``` javascript
+```
 <h1>Mission statement</h1>
 
 <p>My name is Carlos and I'm a front end developer. I am self taught and I currently work with the following tech stack: HTML, CSS, Javascript, NodeJS for backend, React. I've been building modern websites for over a year now and I am so thrilled to work in the tech industry. Perseverance and discipline are able to get you anywhere you want, that's my main motto.</p>
@@ -268,35 +301,51 @@ We would start from the bottom to the top to get the number in hexadecimal and t
 
 # Week challenges (Monday) 💻
 
-1. https://www.codewars.com/kata/5266876b8f4bf2da9b000362
-2. https://www.codewars.com/kata/526571aae218b8ee490006f4
-3. https://www.codewars.com/kata/54b724efac3d5402db00065e
-
+1. [](https://www.codewars.com/kata/5266876b8f4bf2da9b000362)
+2. ```javascript
+3. ```
+4. [](https://www.codewars.com/kata/526571aae218b8ee490006f4)
+5. ``` javascript
+6. ```
+7. [](https://www.codewars.com/kata/54b724efac3d5402db00065e)
+``` javascript
+```
 # Week challenges (Tuesday) 💻
 
-1.https://www.codewars.com/kata/55c45be3b2079eccff00010f
-
-2.https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1
-
-3.https://www.codewars.com/kata/520b9d2ad5c005041100000f
-
+1.[](https://www.codewars.com/kata/55c45be3b2079eccff00010f)
+``` javascript
+```
+2.[](https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1)
+``` javascript
+```
+3.[](https://www.codewars.com/kata/520b9d2ad5c005041100000f)
+``` javascript
+```
 # Week challenges (Wednesday) 💻
 
-1.https://www.codewars.com/kata/52774a314c2333f0a7000688
-
-2.https://www.codewars.com/kata/517abf86da9663f1d2000003
-
-3.https://www.codewars.com/kata/54e6533c92449cc251001667
-
+1.[](https://www.codewars.com/kata/52774a314c2333f0a7000688)
+```javascript
+```
+2.[](https://www.codewars.com/kata/517abf86da9663f1d2000003)
+``` javascript
+```
+3.[](https://www.codewars.com/kata/54e6533c92449cc251001667)
+``` javascript
+```
 # Week challenges (Thursday) 💻
 
-1.https://www.codewars.com/kata/57ea70aa5500adfe8a000110
+1.[](https://www.codewars.com/kata/57ea70aa5500adfe8a000110)
+``` javascript
+```
 
-2.https://www.codewars.com/kata/5848565e273af816fb000449
+2.[](https://www.codewars.com/kata/5848565e273af816fb000449)
+``` javascript
+```
 
-3.https://www.codewars.com/kata/53368a47e38700bd8300030d
-
-4. ✨Complete your 2nd Core Challenge. This is one of the requirements for the certification, where you'll boost your dev professional-brand.
+3.[](https://www.codewars.com/kata/53368a47e38700bd8300030d)
+``` javascript
+```
+4. ✨Complete your 2nd Core Challenge. This is one of the requirements for the certification, where you'll boost your dev professional-brand.(Done)
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -304,7 +353,7 @@ We would start from the bottom to the top to get the number in hexadecimal and t
 
 
 Week challenges (Monday) 💻
-
+ 
 1. I watched this video on regular expressions from fireship
 2. Watched and followed video from free code camp on regex.
 3. I watched guide from dev.to on regular expressions 
