@@ -1,4 +1,4 @@
-# core-code
+# Core-Code
 Core Code bootcamp
 
 # WEEK 1
