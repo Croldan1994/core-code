@@ -672,9 +672,29 @@ function find(rats) {
 
 6. ✨Complete your 3rd Core Challenge. This is one of the requirements for the certification, where you'll boost your dev professional-brand.
 
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# WEEK 9
 
 
+# Week challenges (Monday) 💻
 
+1. What is Node js on my own words. 
+
+Node js is a runtime environment created on 2012. It's a tool mostly used for backend development that can run server-side code without having to use a completely different programming language. Node js is an open-source environment that runs NPM packages and there are over 1,000,000 open source packages that can be used for free. This means that anyone can contribute to the vast diversity of packages offered by NPM without having to create packages or code by ourselves, instead having pre-loaded packages that will allow programmers to not work from scratch. You can stall react and typescript with the NPM package. 
+
+# Week challenges (Tuesday) 💻
+
+1. What is Node js on my own words. 
+
+Node js is a runtime environment created on 2012. It's a tool mostly used for backend development that can run server-side code without having to use a completely different programming language. Node js is an open-source environment that runs NPM packages and there are over 1,000,000 open source packages that can be used for free. This means that anyone can contribute to the vast diversity of packages offered by NPM without having to create packages or code by ourselves, instead having pre-loaded packages that will allow programmers to not work from scratch. You can stall react and typescript with the NPM package. 
+
+2. Answer the question: What is the V8 Javascript Engine? (Use your own words)
+
+
+Week challenges (Tuesday) 💻
+Week challenges (Tuesday) 💻
+Week challenges (Tuesday) 💻
 
 
 
