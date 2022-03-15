@@ -716,7 +716,23 @@ This allows developers to be more productive and know what version of Node js th
 
 - Common JS modules are synchronous, meaning that there are limitations when writing code with common js modules because modules have got to be processed one by one. Whereas ES modules has an asynchronous nature which is better for performance, but might not work for smaller applications. Common JS works with require (), and module.export to export module exports. ES modules is more adapted for newer versions of Node js. Common JS is more suited for older versions of node js. 
 
+7. Create your own Local Node.JS module. The module must contain a function that calculates
+the sum of two numbers. Use the previously created function in another file in any way.
+
+ES module for addition: 
+
+import {add} from './util.mjs
+
+console.log(add(5,5)) //10 
+
+8. Watched this video about the Client-Server architecture
+
+I understood the relationship between client-server and the process from the beginning to the end. The user (client) inputting data and the server getting the information from the request that is sent through AJAX or HTTPS, then sent to the data base which whatever programming language we use and approving that  
+
+
+
 Week challenges (Wednesday) 💻
+
 
 
 
