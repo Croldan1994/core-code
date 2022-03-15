@@ -691,8 +691,35 @@ Node js is a runtime environment created on 2012. It's a tool mostly used for ba
 
 2. Answer the question: What is the V8 Javascript Engine? (Use your own words)
 
+The V8 Javascript engine is the one in charge or running google chrome. It's the engine that runs javascript on the browser, making javascript more efficient and allowing node js environment to thrive and make node js an efficient tool for server code.  V8 is constantly evolving making it more competitive and better day by day. 
 
-Week challenges (Tuesday) 💻
+3. Answer the question: What is NVM and Why is it useful for Node.JS developers?
+
+<h2>What is NVM</h2>
+NVM stands for node version manager and the purpose of NVM is to have multiple versions of Node js. Several versions of Node js wor in different ways, hence the need to have the NVM to swtich from version to version. 
+
+<h2>Why is it useful for developers</h2>
+
+To sum it up, NVM allows users to:
+
+* Locally download any of the remote Long Term Support (LTS) versions of Node.js with a simple command.
+* Easily switch between multiple versions of Node.js, right from the command line.
+* Set up aliases to switch between different downloaded versions of Node.js with ease.
+
+This allows developers to be more productive and know what version of Node js they need to work on. 
+
+4. 
+
+5. 
+
+6. Differences between CommonJS modules vs ES modules
+
+- Common JS modules are synchronous, meaning that there are limitations when writing code with common js modules because modules have got to be processed one by one. Whereas ES modules has an asynchronous nature which is better for performance, but might not work for smaller applications. Common JS works with require (), and module.export to export module exports. ES modules is more adapted for newer versions of Node js. Common JS is more suited for older versions of node js. 
+
+Week challenges (Wednesday) 💻
+
+
+
 Week challenges (Tuesday) 💻
 Week challenges (Tuesday) 💻
 
