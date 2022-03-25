@@ -1,3 +1,4 @@
+
 # Core-Code
 Core Code bootcamp
 
@@ -673,6 +674,44 @@ function find(rats) {
 6. ✨Complete your 3rd Core Challenge. This is one of the requirements for the certification, where you'll boost your dev professional-brand.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
+# WEEK 5 
+
+Week challenges (Monday) 💻
+
+1. I read about primitives types from Javascript applied on typescript: Strings, boolean, number and how to specify arrays, and the values within arrays, instead of using a typeof operator like we use in Javascript. 
+
+
+2. ``` Typescript
+
+
+export function squareSum(numbers: number[]): number {
+    let sum = 0
+    for(const num of numbers) {
+        sum += num * num
+    }
+    return sum
+}
+```
+3. ``` Typescript
+
+
+export class G964 {
+
+    public static nbYear = (p0, percent, aug, p) => {
+    let population = p0;
+    let years = 0;
+
+    while(population < p)
+    {
+      population = population + (population * (percent/100)) + aug; 
+      years++;
+    }
+    return years;
+    }
+}
+``` Typescript
+3. 
+
 
 # WEEK 9
 
