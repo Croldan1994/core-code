@@ -863,6 +863,100 @@ export function longestConsec(strarr: string[], k: number): string {
 ```
 # Week challenges (Thursday) 💻
 
+1. Tile using typescript
+
+``` Typescript
+export class Tile {
+  letter: string;
+  value: number;
+
+  constructor(letter: string, value: number) {
+    this.letter = letter;
+    this.value = value;
+  }
+
+  printTile() {
+    console.log(`
+        ===========================
+          Letter: ${this.letter}
+          Value: ${this.value}
+        ===========================
+    `);
+  }
+}
+```
+
+2. Time 
+``` Typescript
+
+export class Time {
+  hour: number;
+  minute: number;
+  second: number;
+
+  constructor(hour: number, minute: number, second: number) {
+    this.hour = hour;
+    this.minute = minute;
+    this.second = second;
+  }
+
+  printTime() {
+    console.log(`
+        ===========================
+          Hours: ${this.hour}
+          Minutes: ${this.minute}
+          Seconds: ${this.second}
+        ===========================
+    `);
+  }
+
+  getInSeconds(): number {
+    const minutes = this.hour * 60 + this.minute;
+    return minutes * 60 + this.second;
+  }
+}
+```
+
+3. Rational 
+``` Typescript
+
+export class Rational {
+  numerator: number;
+  denominator: number;
+
+  constructor(numerator: number, denominator: number) {
+    this.numerator = numerator;
+    this.denominator = denominator;
+  }
+
+  printRational() {
+    console.log(`${this.numerator} / ${this.denominator}`);
+  }
+
+  invert() {
+    [this.numerator, this.denominator] = [this.denominator, this.numerator];
+  }
+
+  toFloat(): number {
+    return this.numerator / this.denominator;
+  }
+
+  gcd(n: number, d: number): number {
+    if (d == 0) return n;
+    return this.gcd(d, n % d);
+  }
+
+  reduce() {
+    const gcd = this.gcd(this.numerator, this.denominator);
+    this.numerator = this.numerator / gcd;
+    this.denominator = this.denominator / gcd;
+  }
+}
+
+```
+4. 
+
+
 # WEEK 9
 
 
