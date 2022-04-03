@@ -1775,6 +1775,24 @@ const program = new Main();
 program.start();
 
 ``` 
+# README 
+
+OOP Glossary: 
+
+# Abstraction: In OOPS, Abstraction exposes necessary functionality to external objects and hides implementation details. This helps programmers use complex logic inside an object without understanding its implementation. In other words, it is the process of hiding the internal details of an application from the outer world so that we only need to know what the code does, but not how it does it.
+
+![image](https://user-images.githubusercontent.com/88641189/161450583-9631e3df-ae59-4033-8de0-99b4021f4f00.png)
+
+ 
+# Inheritance
+# Polymorphism
+# Encapsulation
+# Class
+# Object
+# Instance
+# Interface
+# Access Modifiers
+# Constructors
 
 
 
