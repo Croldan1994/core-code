@@ -1125,7 +1125,7 @@ export class Main {
 }
 ```
 3. Menu
-
+``` Typescript
 import { MenuElement } from './MenuElement';
 import { Input, Choice, UserOption, SelectChoice } from './Input';
 export class Menu {
@@ -1283,7 +1283,7 @@ export class Menu {
     ===============================================================\n`);
   }
 }
-
+```
 4. MenuElement.ts
 
 ``` typescript 
@@ -1308,10 +1308,22 @@ export class MenuElement {
 }
 ```
 5. app.ts
+
+``` Typescript
 import { Main } from './Main';
 
 const program = new Main();
 program.start();
+
+```
+
+
+
+
+
+
+
+
 
 
 # WEEK 9
