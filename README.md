@@ -1779,20 +1779,30 @@ program.start();
 
 OOP Glossary: 
 
-# Abstraction: In OOPS, Abstraction exposes necessary functionality to external objects and hides implementation details. This helps programmers use complex logic inside an object without understanding its implementation. In other words, it is the process of hiding the internal details of an application from the outer world so that we only need to know what the code does, but not how it does it.
+<h2><b>Abstraction</b></h2> In OOPS, Abstraction exposes necessary functionality to external objects and hides implementation details. This helps programmers use complex logic inside an object without understanding its implementation. In other words, it is the process of hiding the internal details of an application from the outer world so that we only need to know what the code does, but not how it does it.
 
 ![image](https://user-images.githubusercontent.com/88641189/161450583-9631e3df-ae59-4033-8de0-99b4021f4f00.png)
 
  
-# Inheritance
-# Polymorphism
-# Encapsulation
-# Class
-# Object
-# Instance
-# Interface
-# Access Modifiers
-# Constructors
+<h2><b>Inheritance</h2></b>  As with the other principles of OOP, inheritance is meant to optimize the work of programmers. The role that inheritance plays in this optimization is in allowing software engineers to create class hierarchies, where classes and objects inherit properties and behaviors from their parent (or super) class. A class that inherits from a parent (or super) class is called a subclass or child class, and objects that receive properties and behaviors from a parent through inheritance are referred to as child objects.
+
+  <h2><b>Polymorphism</h2></b> Polymorphism is one of the core concepts of object-oriented programming (OOP) and describes situations in which something occurs in several different forms. In computer science, it describes the concept that you can access objects of different types through the same interface. 
+  
+  <h2><b>Encapsulation</h2></b> By definition, encapsulation describes the idea of bundling data and methods that work on that data within one unit, like a class in Java. This concept is also often used to hide the internal representation, or state of an object from the outside. This is called information hiding.
+
+  <h2><b>Class<h2></b> In object-oriented programming, a class is a blueprint for creating objects (a particular data structure), providing initial values for state (member variables or attributes), and implementations of behavior (member functions or methods).
+
+
+  <h2><b>Object</h2></b> In computer science, an object can be a variable, a data structure, a function, or a method. As regions of memory, they contain value and are referenced by identifiers.
+
+In the object-oriented programming paradigm, object can be a combination of variables, functions, and data structures; in particular in class-based variations of the paradigm it refers to a particular instance of a class.
+
+In the relational model of database management, an object can be a table or column, or an association between data and a database entity (such as relating a person's age to a specific person).
+
+  <h2><b>Instance</h2></b>
+  <h2><b>Interface</h2></b>
+  <h2><b>Access Modifiers</h2></b>
+  <h2><b>Constructors</h2></b>
 
 
 
