@@ -1317,12 +1317,464 @@ program.start();
 
 ```
 
+# Movies
+1. Action movie.ts
+``` Typescript
+import { Movie } from './Movie';
 
+export class ActionMovie extends Movie {
+  explosions_count: number;
+  guns: boolean;
+  martial_arts: boolean;
 
+  constructor(
+    name: string,
+    director: string,
+    language: string,
+    running_time: number,
+    year: number,
+    explosions_count: number,
+    guns: boolean,
+    martial_arts: boolean
+  ) {
+    super(name, director, language, running_time, year);
+    this.explosions_count = explosions_count;
+    this.guns = guns;
+    this.martial_arts = martial_arts;
+  }
 
+  incrementExplosions() {
+    this.explosions_count += 1;
+  }
 
+  expectGuns(): string {
+    if (this.guns) return '🔫';
+    return '🙅🏻‍♂️';
+  }
 
+  expectMartialArts(): string {
+    if (this.martial_arts) return '🥷🏻';
+    return '🙅🏻‍♂️';
+  }
 
+  printActionMovie() {
+    console.log(`
+      ----------------------------
+      Name: ${this.name}
+      Year: ${this.year}
+      Director: ${this.director}
+      Language: ${this.language}
+      Running Time: ${this.running_time}
+      Jump Scares Count: ${this.explosions_count}
+      Guns: ${this.expectGuns()}
+      Martial Arts: ${this.expectMartialArts()}
+      ----------------------------
+    `);
+  }
+}
+
+```
+2. Horrormovies.ts
+
+``` Typescript
+import { Movie } from './Movie';
+
+export class HorrorMovie extends Movie {
+  jump_scares_count: number;
+  ghosts: boolean;
+  visions: boolean;
+
+  constructor(
+    name: string,
+    director: string,
+    language: string,
+    running_time: number,
+    year: number,
+    jump_scares_count: number,
+    ghost: boolean,
+    visions: boolean
+  ) {
+    super(name, director, language, running_time, year);
+    this.jump_scares_count = jump_scares_count;
+    this.ghosts = ghost;
+    this.visions = visions;
+  }
+
+  incrementJumpscares() {
+    this.jump_scares_count += 1;
+  }
+
+  expectGhosts(): string {
+    if (this.ghosts) return '👻';
+    return '🙅🏻‍♂️';
+  }
+
+  expectVisions(): string {
+    if (this.visions) return '🔮';
+    return '🙅🏻‍♂️';
+  }
+
+  printHorrorMovie() {
+    console.log(`
+      ----------------------------
+      Name: ${this.name}
+      Year: ${this.year}
+      Director: ${this.director}
+      Language: ${this.language}
+      Running Time: ${this.running_time}
+      Jump Scares Count: ${this.jump_scares_count}
+      Ghosts: ${this.expectGhosts()}
+      Visions: ${this.expectVisions()}
+      ----------------------------
+    `);
+  }
+}
+
+```
+3. Input.ts 
+
+``` Typescript 
+import { prompt } from 'enquirer';
+export type UserInput = { data: string };
+export type UserFormInput = { data: any };
+export type UserOption = { data: number };
+export type UserOptionById = UserInput;
+export type UserConfirm = { data: boolean };
+export type Choice = { name: string; message: string };
+export type SelectChoice = { option: number; message: string };
+type Choices = Choice[] | string[];
+type UserOptionAux = { data: string };
+type SelectChoices = SelectChoice[];
+
+export class Input {
+  static async getInput(message: string): Promise<UserInput> {
+    const input: UserInput = await prompt({
+      type: 'input',
+      name: 'data',
+      message: message,
+    });
+    return input;
+  }
+
+  static async getForm(
+    message: string,
+    choices: Choices
+  ): Promise<UserFormInput> {
+    const input: UserFormInput = await prompt({
+      type: 'form',
+      name: 'data',
+      message: message,
+      choices: choices,
+    });
+    return input;
+  }
+
+  static async getSelect(
+    message: string,
+    choices: SelectChoices
+  ): Promise<UserOption> {
+    const input: UserOptionAux = await prompt({
+      type: 'select',
+      name: 'data',
+      message: message,
+      choices: choices.map((choice: SelectChoice) => ({
+        name: choice.option.toString(),
+        message: choice.message,
+      })),
+    });
+    return { data: Number(input.data) };
+  }
+
+  static async getSelectById(
+    message: string,
+    choices: Choice[]
+  ): Promise<UserOptionById> {
+    const input: UserOptionById = await prompt({
+      type: 'select',
+      name: 'data',
+      message: message,
+      choices: choices,
+    });
+    return input;
+  }
+  static async getConfirm(message: string): Promise<UserConfirm> {
+    const input: UserConfirm = await prompt({
+      type: 'confirm',
+      name: 'data',
+      initial: false,
+      message: message,
+    });
+    return { data: input.data };
+  }
+}
+```
+4. Main.ts 
+
+``` Typescript 
+import { Input, Choice, SelectChoice } from './Input';
+import { Movie } from './Movie';
+import { ActionMovie } from './ActionMovie';
+import { HorrorMovie } from './HorrorMovie';
+
+type ActionMovieInput = {
+  name: string;
+  director: string;
+  language: string;
+  running_time: string;
+  year: string;
+  explosions_count: string;
+};
+
+type HorrorMovieInput = {
+  name: string;
+  director: string;
+  language: string;
+  running_time: string;
+  year: string;
+  jump_scares_count: string;
+};
+
+export class Main {
+  movies: Movie[] = [];
+  menuOptions: SelectChoice[] = [
+    { option: 1, message: 'Add Action Movie' },
+    { option: 2, message: 'Add Horror Movie' },
+    { option: 3, message: 'Show Action Movies' },
+    { option: 4, message: 'Show Horror Movies' },
+    { option: 5, message: 'Increment Explosions In Movie' },
+    { option: 6, message: 'Increment Jump Scares In Movie' },
+    { option: 7, message: 'Exit' },
+  ];
+  actionMovieForm: Choice[] = [
+    { name: 'name', message: 'Name' },
+    { name: 'director', message: 'Director' },
+    { name: 'language', message: 'Language' },
+    { name: 'running_time', message: 'Running Time (min)' },
+    { name: 'year', message: 'Year' },
+    { name: 'explosions_count', message: 'Explosions Count' },
+  ];
+  horrorMovieForm: Choice[] = [
+    { name: 'name', message: 'Name' },
+    { name: 'director', message: 'Director' },
+    { name: 'language', message: 'Language' },
+    { name: 'running_time', message: 'Running Time (min)' },
+    { name: 'year', message: 'Year' },
+    { name: 'jump_scares_count', message: 'Jump Scares Count' },
+  ];
+
+  async addActionMovie() {
+    const info: ActionMovieInput = (
+      await Input.getForm('Fill the following: ', this.actionMovieForm)
+    ).data;
+    const guns: boolean = (
+      await Input.getConfirm('Are there guns in this movie?')
+    ).data;
+    const martial_arts: boolean = (
+      await Input.getConfirm('Are there martial arts in this movie?')
+    ).data;
+    this.movies.push(
+      new ActionMovie(
+        info.name,
+        info.director,
+        info.language,
+        Number(info.running_time),
+        Number(info.year),
+        Number(info.explosions_count),
+        guns,
+        martial_arts
+      )
+    );
+  }
+
+  async addHorrorMovie() {
+    const info: HorrorMovieInput = (
+      await Input.getForm('Fill the following: ', this.horrorMovieForm)
+    ).data;
+    const ghosts: boolean = (
+      await Input.getConfirm('Are there ghosts in this movie?')
+    ).data;
+    const visions: boolean = (
+      await Input.getConfirm('Are there visions in this movie?')
+    ).data;
+    this.movies.push(
+      new HorrorMovie(
+        info.name,
+        info.director,
+        info.language,
+        Number(info.running_time),
+        Number(info.year),
+        Number(info.jump_scares_count),
+        ghosts,
+        visions
+      )
+    );
+  }
+
+  showActionMovies() {
+    this.movies.forEach((movie: Movie) => {
+      if (movie instanceof ActionMovie) movie.printActionMovie();
+    });
+  }
+
+  showHorrorMovies() {
+    this.movies.forEach((movie: Movie) => {
+      if (movie instanceof HorrorMovie) movie.printHorrorMovie();
+    });
+  }
+
+  async incrementJumpScares() {
+    const horrorMoviesOptions: Choice[] = this.movies
+      .filter((movie: Movie) => movie instanceof HorrorMovie)
+      .map((movie: Movie) => ({
+        name: movie.id,
+        message: movie.name,
+      }));
+    if (horrorMoviesOptions.length === 0) {
+      return console.log('No Horror Movies Available');
+    }
+    const idOfMovieToIncrementJumpScares = (
+      await Input.getSelectById('Select The Horror Movie', horrorMoviesOptions)
+    ).data;
+    this.movies.forEach((movie: Movie) => {
+      if (movie.id === idOfMovieToIncrementJumpScares) {
+        if (movie instanceof HorrorMovie) return movie.incrementJumpscares();
+      }
+    });
+    console.log('😨😱💀 Jump Scare has been added!');
+  }
+
+  async incrementExplosions() {
+    const actionMoviesOptions: Choice[] = this.movies
+      .filter((movie: Movie) => movie instanceof ActionMovie)
+      .map((movie: Movie) => ({
+        name: movie.id,
+        message: movie.name,
+      }));
+    if (actionMoviesOptions.length === 0) {
+      return console.log('No Action Movies Available');
+    }
+    const idOfMovieToIncrementExplosions = (
+      await Input.getSelectById('Select The Action Movie', actionMoviesOptions)
+    ).data;
+    this.movies.forEach((movie: Movie) => {
+      if (movie.id === idOfMovieToIncrementExplosions) {
+        if (movie instanceof ActionMovie) return movie.incrementExplosions();
+      }
+    });
+    console.log('💥💣🧨 Explosion has been added!');
+  }
+
+  async start() {
+    let running = true;
+    let option: number;
+    while (running) {
+      option = (await Input.getSelect('Blockbuster', this.menuOptions)).data;
+      console.clear();
+      switch (option) {
+        case 1: {
+          await this.addActionMovie();
+          break;
+        }
+        case 2: {
+          await this.addHorrorMovie();
+          break;
+        }
+        case 3: {
+          this.showActionMovies();
+          break;
+        }
+        case 4: {
+          this.showHorrorMovies();
+          break;
+        }
+        case 5: {
+          await this.incrementExplosions();
+          break;
+        }
+        case 6: {
+          await this.incrementJumpScares();
+          break;
+        }
+        case 7: {
+          running = false;
+          break;
+        }
+        default: {
+          console.log('No valid option selected');
+        }
+      }
+    }
+  }
+}
+```
+5. 
+
+import { v4 as uuidv4 } from 'uuid';
+
+export class Movie {
+  id: string = '';
+  name: string;
+  director: string;
+  language: string;
+  running_time: number;
+  year: number;
+
+  constructor(
+    name: string,
+    director: string,
+    language: string,
+    running_time: number,
+    year: number
+  ) {
+    this.name = name;
+    this.director = director;
+    this.language = language;
+    this.running_time = running_time;
+    this.year = year;
+    this.id = uuidv4();
+  }
+}
+
+5. Movie.ts 
+
+``` Typescript
+
+import { v4 as uuidv4 } from 'uuid';
+
+export class Movie {
+  id: string = '';
+  name: string;
+  director: string;
+  language: string;
+  running_time: number;
+  year: number;
+
+  constructor(
+    name: string,
+    director: string,
+    language: string,
+    running_time: number,
+    year: number
+  ) {
+    this.name = name;
+    this.director = director;
+    this.language = language;
+    this.running_time = running_time;
+    this.year = year;
+    this.id = uuidv4();
+  }
+}
+```
+6. App.ts 
+
+``` Typescript 
+
+import { Main } from './Main';
+
+const program = new Main();
+program.start();
+
+``` 
 
 
 
