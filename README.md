@@ -1784,25 +1784,38 @@ OOP Glossary:
 ![image](https://user-images.githubusercontent.com/88641189/161450583-9631e3df-ae59-4033-8de0-99b4021f4f00.png)
 
  
-<h2><b>Inheritance</h2></b>  As with the other principles of OOP, inheritance is meant to optimize the work of programmers. The role that inheritance plays in this optimization is in allowing software engineers to create class hierarchies, where classes and objects inherit properties and behaviors from their parent (or super) class. A class that inherits from a parent (or super) class is called a subclass or child class, and objects that receive properties and behaviors from a parent through inheritance are referred to as child objects.
+<h2><b>Inheritance</b></h2>  As with the other principles of OOP, inheritance is meant to optimize the work of programmers. The role that inheritance plays in this optimization is in allowing software engineers to create class hierarchies, where classes and objects inherit properties and behaviors from their parent (or super) class. A class that inherits from a parent (or super) class is called a subclass or child class, and objects that receive properties and behaviors from a parent through inheritance are referred to as child objects.
 
-  <h2><b>Polymorphism</h2></b> Polymorphism is one of the core concepts of object-oriented programming (OOP) and describes situations in which something occurs in several different forms. In computer science, it describes the concept that you can access objects of different types through the same interface. 
+  <h2><b>Polymorphism</b></h2> Polymorphism is one of the core concepts of object-oriented programming (OOP) and describes situations in which something occurs in several different forms. In computer science, it describes the concept that you can access objects of different types through the same interface. 
   
-  <h2><b>Encapsulation</h2></b> By definition, encapsulation describes the idea of bundling data and methods that work on that data within one unit, like a class in Java. This concept is also often used to hide the internal representation, or state of an object from the outside. This is called information hiding.
+  <h2><b>Encapsulation</b></h2> By definition, encapsulation describes the idea of bundling data and methods that work on that data within one unit, like a class in Java. This concept is also often used to hide the internal representation, or state of an object from the outside. This is called information hiding.
 
-  <h2><b>Class<h2></b> In object-oriented programming, a class is a blueprint for creating objects (a particular data structure), providing initial values for state (member variables or attributes), and implementations of behavior (member functions or methods).
+  <h2><b>Class</b><h2> 
+In object-oriented programming, a class is a blueprint for creating objects (a particular data structure), providing initial values for state (member variables or attributes), and implementations of behavior (member functions or methods).
 
 
-  <h2><b>Object</h2></b> In computer science, an object can be a variable, a data structure, a function, or a method. As regions of memory, they contain value and are referenced by identifiers.
+  <h2><b>Object</b></h2> In computer science, an object can be a variable, a data structure, a function, or a method. As regions of memory, they contain value and are referenced by identifiers.
 
 In the object-oriented programming paradigm, object can be a combination of variables, functions, and data structures; in particular in class-based variations of the paradigm it refers to a particular instance of a class.
 
 In the relational model of database management, an object can be a table or column, or an association between data and a database entity (such as relating a person's age to a specific person).
 
-  <h2><b>Instance</h2></b>
-  <h2><b>Interface</h2></b>
-  <h2><b>Access Modifiers</h2></b>
-  <h2><b>Constructors</h2></b>
+  <h2><b>Instance</b></h2> 
+
+In object-oriented programming (OOP), an instance is a concrete occurrence of any object, existing usually during the runtime of a computer program. Formally, "instance" is synonymous with "object" as they are each a particular value (realization), and these may be called an instance object; "instance" emphasizes the distinct identity of the object. The creation of an instance is called instantiation.
+
+  <h2><b>Interface</b></h2> 
+An interface is a description of the actions that an object can do... for example when you flip a light switch, the light goes on, you don't care how, just that it does. In Object Oriented Programming, an Interface is a description of all functions that an object must have in order to be an "X". Again, as an example, anything that "ACTS LIKE" a light, should have a turn_on() method and a turn_off() method. The purpose of interfaces is to allow the computer to enforce these properties and to know that an object of TYPE T (whatever the interface is ) must have functions called X,Y,Z, etc.
+
+  <h2><b>Access Modifiers</b></h2>
+
+Access modifiers (or access specifiers) are keywords in object-oriented languages that set the accessibility of classes, methods, and other members. Access modifiers are a specific part of programming language syntax used to facilitate the encapsulation of components.[1]
+
+  <h2><b>Constructors</b></h2>
+	
+A constructor is a special method of a class or structure in object-oriented programming that initializes a newly created object of that type. Whenever an object is created, the constructor is called automatically.
+
+
 
 
 
