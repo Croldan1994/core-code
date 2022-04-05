@@ -1939,10 +1939,6 @@ TypeScript supports access modifiers at the class level. The access modifier in 
 
 We can also use it to control the accessibility of the data members of a class so that It can not be used abruptly anywhere in the script file. If the class does not have to be set any access modifier, the TypeScript automatically sets the public modifier access to all class members as a default modifier,
 
-------------------------------------------------------------------------------------------
-
-Constructor
-
 Public - By default, members (properties and methods) of the TypeScript class are public - so you don’t need to prefix members with the public keyword. Public members are accessible everywhere without restrictions even from the multiple level sub-classes without any compile errors.
 
 Private - A private member cannot be accessed outside of its containing class. Private members can be accessed only within the class and even their sub-classes won't be allowed to use their private properties and attributes.
@@ -1950,8 +1946,32 @@ Private - A private member cannot be accessed outside of its containing class. P
 Protected - A protected member cannot be accessed outside of its containing class. Protected members can be accessed only within the class and by the instance of its sub/child class.
 
 In compiled JavaScript code, there will be no such type of restriction on the members.accessmodifiers.ts
+	
+----------------------------------------------------------------------------------------------------
+	
+# Constructor
 
+Class constructors are very similar to functions. You can add parameters with type annotations, default values, and overloads:
 
+There are a few things to keep in mind when diferentiating class constructor signatures and function signatures:
+
+- Constructors can’t have type parameters - these belong on the outer class declaration, which we’ll learn about later
+- Constructors can’t have return type annotations - the class instance type is always what’s returned
+	
+To sum it up the constructor is a special method of a class for creating and initializing an object instance of that class. 
+
+ A constructor allows you to provide any custom initialization that must be done before any other methods can be called on an instantiated object. 
+	
+If I don't provide my own constructor, then a default constructor is set. 
+	
+The default constructor should look like this:
+	
+``` Typescript
+	
+constructor() {}
+
+``` 
+	
 
 
 # WEEK 9
