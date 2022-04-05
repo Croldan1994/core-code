@@ -1935,7 +1935,21 @@ In the example, the property _name is private. This means we can’t access this
 	
 Access modifiers: 
 	
+TypeScript supports access modifiers at the class level. The access modifier in TypeScript is quite useful and recommended because it preserves the security of the class members such as properties and attributes and prevents them from being used inappropriately. 
 
+We can also use it to control the accessibility of the data members of a class so that It can not be used abruptly anywhere in the script file. If the class does not have to be set any access modifier, the TypeScript automatically sets the public modifier access to all class members as a default modifier,
+
+------------------------------------------------------------------------------------------
+
+Constructor
+
+Public - By default, members (properties and methods) of the TypeScript class are public - so you don’t need to prefix members with the public keyword. Public members are accessible everywhere without restrictions even from the multiple level sub-classes without any compile errors.
+
+Private - A private member cannot be accessed outside of its containing class. Private members can be accessed only within the class and even their sub-classes won't be allowed to use their private properties and attributes.
+
+Protected - A protected member cannot be accessed outside of its containing class. Protected members can be accessed only within the class and by the instance of its sub/child class.
+
+In compiled JavaScript code, there will be no such type of restriction on the members.accessmodifiers.ts
 
 
 
