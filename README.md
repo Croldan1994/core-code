@@ -1839,8 +1839,104 @@ let foo = "hello";
 foo = 55; // ERROR - foo cannot change from string to number
 ```
 
+That being said, let's dive in to classes:
+	
+<b><i>Classes in typescript</i></b>
+<p>
+Classes in TypeScript, like JavaScript, are a special syntax for its prototypical inheritance model, which is comparable to inheritance in class-based object-oriented languages. Classes are just special functions added to ES6 that are meant to mimic the class keyword from these other languages.</p>
+	
+We can define the types that each piece of data should be in a class:
 
+This is an example of how classes can define types: 
+	
+``` Typescript 	
+  class Person {
+  name: string;
+  isCool: boolean;
+  pets: number;
+
+  constructor(n: string, c: boolean, p: number) {
+    this.name = n;
+    this.isCool = c;
+    this.pets = p;
+  }
+
+  sayHello() {
+    return `Hi, my name is ${this.name} and I have ${this.pets} pets`;
+  }
+}
+
+const person1 = new Person('Danny', false, 1);
+const person2 = new Person('Sarah', 'yes', 6); // ERROR: Argument of type 'string' is not assignable to parameter of type 'boolean'.
+
+console.log(person1.sayHello()); // Hi, my name is Danny and I have 1 pets
+```
+------------------------------------------------------------------------------------------------------------
+	
+Objects:
+	
+In JavaScript, the fundamental way that we group and pass around data is through objects. In TypeScript, we represent those through object types.
+As we’ve seen, they can be anonymous:
+
+An object is an instance which contains set of key value pairs. The values can be scalar values or functions or even array of other objects. The syntax is given below 
+
+Objects in TypeScript must have all the correct properties and value types:
+
+// Declare a variable called person with a specific object type annotation
+let person: {
+  name: string;
+  location: string;
+  isProgrammer: boolean;
+};
+
+// Assign person to an object with all the necessary properties and value types
+person = {
+  name: 'Danny',
+  location: 'UK',
+  isProgrammer: true,
+};
+
+person.isProgrammer = 'Yes'; // ERROR: should be a boolean
+
+person = {
+  name: 'John',
+  location: 'US',
+}; 
+// ERROR: missing the isProgrammer property
+	
+The object is being defined inside of a variable with the correct values in the first line. 
+	
+When defining the signature of an object, you will usually use an interface. This is useful if we need to check that multiple objects have the same specific properties and value types:	
+
+-------------------------------------------------------------------------------------------------------------------------------
+# Encapsulation
+	
+Encapsulation is a simple concept; it is the process of ensuring accurate protection over certain data (properties) passed back and forth between your application. 
+	
+class Character {
+  private _name: string;
+
+  constructor(name: string) {
+    this._name = name;
+  }
+
+  public get name(): string {
+    return this._name;
+  }
+
+  public set name(value: string) {
+    this._name = value;
+  }
+}
+
+In the example, the property _name is private. This means we can’t access this property from outside the class. In order to get access to this private property, we use so-called getter and setter methods.
 </p>
+---------------------------------------------------------------------------------------------------------
+	
+Access modifiers: 
+	
+
+
 
 
 
@@ -1898,6 +1994,8 @@ console.log(add(5,5)) //10
 8. Watched this video about the Client-Server architecture
 
 I understood the relationship between client-server and the process from the beginning to the end. The user (client) inputting data and the server getting the information from the request that is sent through AJAX or HTTPS, then sent to the data base which whatever programming language we use and approving that  
+
+
 
 
 
