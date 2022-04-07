@@ -1971,9 +1971,108 @@ The default constructor should look like this:
 constructor() {}
 
 ``` 
+
+3. Interface:
 	
+Week challenges (Wednesday) 💻
 
+1. [Build tower](https://www.codewars.com/kata/576757b1df89ecf5bd00073b/train/typescript)	
+	
+``` Typescript
+export const towerBuilder = (nFloors: number): string[] => {
+  let tower = new Array();
+  let resTower = new Array();
+  let initial = '*';
+    let str = ' ';
+  if(nFloors ==1){
+    return  ["*"];
+  }
+  for( let i = 1; i<= nFloors; i++ ){
+    if(i == nFloors){
+      tower.push(initial);
+    }
+    else{
+      
+    var nesStr =  str.repeat(nFloors-i);
+    tower.push(nesStr+initial+nesStr);
+    initial += '**';
+    }
+  }
+  
+  return tower;
+}
 
+2.[Highest Scoring Word](https://www.codewars.com/kata/57eb8fcdf670e99d9b000272/train/typescript)			     
+``` Typescript 
+	
+export const high = (str: string): string => {
+  const minScore: string = 'a';
+  const words: string[] = str.split(' ');
+  let bestWordScore: number = 0;
+  let bestMatch: string = '';
+  
+
+  for(let i: number = 0; i < words.length; i++) {
+    const word: string = words[i];
+    let sum: number = 0;
+    
+    for(let j: number = 0; j < word.length; j++) {
+      sum += 1 + word.charCodeAt(j) - minScore.charCodeAt(0);
+    }
+
+    if (sum > bestWordScore) {
+      bestWordScore = sum;
+      bestMatch = word;
+    }
+  }
+  
+  return bestMatch;
+}			   
+```
+3.[Equal Sides Of An Array](https://www.codewars.com/kata/5679aa472b8f57fb8c000047/solutions)
+``` Typescript	
+const sumArr = (arr: number[]): number => arr.reduce((prevVal, val) => prevVal + val, 0);
+
+export const findEvenIndex = (arr: number[]): number => arr.findIndex((v, index) => { 
+    const leftSide = arr.slice(0, index);
+    const rightSide = arr.slice(index + 1);
+    
+    return sumArr(leftSide) === sumArr(rightSide)
+});	
+	
+```
+4. [Meeting](https://www.codewars.com/kata/59df2f8f08c6cec835000012/train/typescript)
+
+``` Typescript
+	
+export function meeting(s: string): string {
+  return s.toUpperCase()
+          .split(';')
+          .map(n => '(' + n.split(':').reverse().join(', ') +')')
+          .sort() 
+          .join('');
+}
+```
+
+5. [Street Fighter 2 - Character Selection](https://www.codewars.com/kata/5853213063adbd1b9b0000be/solutions)
+	
+``` Typescript
+	
+export function streetFighterSelection(xs: Array<string[]>, p: number[], moves: string[]) {
+  const n = xs[0].length;
+  const vx = { "up": [-1, 0], "down": [1, 0], "left": [0, -1], "right": [0, 1] };
+  const move = v => { p[0] = Math.min(Math.max(p[0] + v[0], 0), 1); p[1] = (((p[1] + v[1]) % n) + n) % n; }
+  return moves.reduce((his, m) => (move(vx[m]), his.push(xs[p[0]][p[1]]), his), []);
+}
+
+```
+
+	
+	
+	
+	
+	
+	
 # WEEK 9
 
 
