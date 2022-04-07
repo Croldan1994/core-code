@@ -2066,10 +2066,15 @@ export function streetFighterSelection(xs: Array<string[]>, p: number[], moves: 
 }
 
 ```
+Week challenges (Thursday) 💻
 
+1. Watched [Object Oriented Programming - The Four Pillars of OOP](https://www.youtube.com/watch?v=1ONhXmQuWP8)
+2. Watched [Abstract Classes vs Interfaces](https://www.youtube.com/watch?v=Lnqmde9LP74)	
+3. READ about Abastrat classes and design patterns in typescript(https://sbcode.net/typescript/abstract_classes/)
 	
 	
-	
+# WEEK 7
+
 	
 	
 	
