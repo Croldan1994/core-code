@@ -2075,7 +2075,9 @@ Week challenges (Thursday) 💻
 	
 # WEEK 7
 
+1. Tic tac toe - Using typescript
 	
+
 	
 	
 # WEEK 9
