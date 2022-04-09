@@ -2697,8 +2697,19 @@ export function countSmileys(arr: string[]) {
 return count;
 }
 ```
+4. [Training on Base64](https://www.codewars.com/kata/5270f22f862516c686000161/train/typescript)
 	    
-	
+``` Typescript	    
+export function toBase64(str: string): string {
+  return new Buffer(str).toString('base64');
+}
+
+export function fromBase64(str: string): string {
+  return new Buffer(str, 'base64').toString('ascii');
+}	    
+```
+
+5. 	
 	    
 # WEEK 9
 
