@@ -2584,11 +2584,136 @@ console.log(add(5,5)) //10
 
 I understood the relationship between client-server and the process from the beginning to the end. The user (client) inputting data and the server getting the information from the request that is sent through AJAX or HTTPS, then sent to the data base which whatever programming language we use and approving that  
 
+-----------------------------------------------------------------------------------------------------------------------------------------------
+	
+** Week challenges (Tuesday) 💻
 
+1. Generics using Typescript 	
+	
+Linkedlists.ts 
+	
+import { Node } from './Node';
 
+export class LinkedList<T> {
+  private head: Node<T> | null = null;
+  private length: number = 0;
 
+  get size(): number {
+    return this.length;
+  }
 
+  // First In First Out (FIFO)
+  public add(value: T): void {
+    if (this.head == null) {
+      this.head = new Node(value);
+    } else {
+      let node = this.head;
+      while (node.next !== null) {
+        node = node.next;
+      }
+      node.next = new Node(value);
+    }
+    this.length++;
+  }
+
+  public remove(): void {
+    if (this.head !== null) {
+      this.head = this.head.next;
+      this.length--;
+    }
+  }
+
+  // Last In First Out (LIFO)
+  public addFirst(value: T) {
+    if (this.head === null) {
+      this.add(value);
+    } else {
+      let node = new Node(value);
+      node.next = this.head;
+      this.head = node;
+      this.length++;
+    }
+  }
+
+  public removeLast(): void {
+    if (this.head !== null) {
+      let node = this.head;
+      let previous: Node<T> = node;
+      while (node.next !== null) {
+        previous = node;
+        node = node.next;
+      }
+      previous.next = null;
+      this.length--;
+    }
+  }
+
+  public toString(): string {
+    if (this.head === null) return '[]';
+    let representation = '';
+    let node = this.head;
+    while (node.next !== null) {
+      representation = `${representation}${JSON.stringify(node.value)},`;
+      node = node.next;
+    }
+    representation = `${representation}${JSON.stringify(node.value)}`;
+    representation = `[${representation}]`;
+    return representation;
+  }
+}
+	
+2. [Encrypt This!](https://www.codewars.com/kata/5848565e273af816fb000449/train/typescript) 
+	
+``` Typescript 
+	
+function encryptThis(text) {
+  let strArr = text.split(' ');
+  let output = [];
+  
+  strArr.forEach(str => {
+    if (str.length === 1) {
+      output.push(str.charCodeAt(0));
+    } 
+    else {
+      let tempStr = str.split('');
+      tempStr[0] = str.charCodeAt(0);
+      tempStr[1] = str[str.length - 1];
+      tempStr[str.length - 1] = str[1];
+      output.push(tempStr.join(''));
+    }
+  });
+  
+  return output.join(' ');
+}
+
+console.log(encryptThis("hello world"));
+	
+``` 
+
+3. [Make the deadfish Swim](https://www.codewars.com/kata/51e0007c1f9378fa810002a9/train/typescript)
+
+``` Typescript	
+export function parse(data: string): number[] {
+  const result: number[] = []
+  const chars: string[] = data.split('')
+
+  let num: number = 0
+ 
+  chars.forEach((char: string) => {
+    switch (char) {
+      case 'i': num = ++num; break;
+      case 'd': num = --num; break;
+      case 's': num = num ** 2; break;
+      case 'o': result.push(num); break;
+    }
+  })
+ 
+  return result  
+}
+```
 Week challenges (Wednesday) 💻
+	
+
 
 
 
