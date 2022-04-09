@@ -2527,66 +2527,7 @@ program.start();
 	  
 ```
 	    
-	  
-
-# WEEK 9
-
-
-# Week challenges (Monday) 💻
-
-1. What is Node js on my own words. 
-
-Node js is a runtime environment created on 2012. It's a tool mostly used for backend development that can run server-side code without having to use a completely different programming language. Node js is an open-source environment that runs NPM packages and there are over 1,000,000 open source packages that can be used for free. This means that anyone can contribute to the vast diversity of packages offered by NPM without having to create packages or code by ourselves, instead having pre-loaded packages that will allow programmers to not work from scratch. You can stall react and typescript with the NPM package. 
-
 # Week challenges (Tuesday) 💻
-
-1. What is Node js on my own words. 
-
-Node js is a runtime environment created on 2012. It's a tool mostly used for backend development that can run server-side code without having to use a completely different programming language. Node js is an open-source environment that runs NPM packages and there are over 1,000,000 open source packages that can be used for free. This means that anyone can contribute to the vast diversity of packages offered by NPM without having to create packages or code by ourselves, instead having pre-loaded packages that will allow programmers to not work from scratch. You can stall react and typescript with the NPM package. 
-
-2. Answer the question: What is the V8 Javascript Engine? (Use your own words)
-
-The V8 Javascript engine is the one in charge or running google chrome. It's the engine that runs javascript on the browser, making javascript more efficient and allowing node js environment to thrive and make node js an efficient tool for server code.  V8 is constantly evolving making it more competitive and better day by day. 
-
-3. Answer the question: What is NVM and Why is it useful for Node.JS developers?
-
-<h2>What is NVM</h2>
-NVM stands for node version manager and the purpose of NVM is to have multiple versions of Node js. Several versions of Node js wor in different ways, hence the need to have the NVM to swtich from version to version. 
-
-<h2>Why is it useful for developers</h2>
-
-To sum it up, NVM allows users to:
-
-* Locally download any of the remote Long Term Support (LTS) versions of Node.js with a simple command.
-* Easily switch between multiple versions of Node.js, right from the command line.
-* Set up aliases to switch between different downloaded versions of Node.js with ease.
-
-This allows developers to be more productive and know what version of Node js they need to work on. 
-
-4. 
-
-5. 
-
-6. Differences between CommonJS modules vs ES modules
-
-- Common JS modules are synchronous, meaning that there are limitations when writing code with common js modules because modules have got to be processed one by one. Whereas ES modules has an asynchronous nature which is better for performance, but might not work for smaller applications. Common JS works with require (), and module.export to export module exports. ES modules is more adapted for newer versions of Node js. Common JS is more suited for older versions of node js. 
-
-7. Create your own Local Node.JS module. The module must contain a function that calculates
-the sum of two numbers. Use the previously created function in another file in any way.
-
-ES module for addition: 
-
-import {add} from './util.mjs
-
-console.log(add(5,5)) //10 
-
-8. Watched this video about the Client-Server architecture
-
-I understood the relationship between client-server and the process from the beginning to the end. The user (client) inputting data and the server getting the information from the request that is sent through AJAX or HTTPS, then sent to the data base which whatever programming language we use and approving that  
-
------------------------------------------------------------------------------------------------------------------------------------------------
-	
-** Week challenges (Tuesday) 💻
 
 1. Generics using Typescript 	
 	
@@ -2710,7 +2651,113 @@ export function parse(data: string): number[] {
  
   return result  
 }
+```  
+# Week challenges (Wednesday) 💻
+
+1. Finished course about generics [here](https://docs.microsoft.com/en-us/learn/modules/typescript-generics/)	    
+2. Read about Creating union types [here](https://learntypescript.dev/04/l5-union)
+3. Read about Creating intersection [here](https://learntypescript.dev/04/l6-intersection)
+4. [Dashasize it](https://www.codewars.com/kata/58223370aef9fc03fd000071/train/typescript)
+
+# Week challenges (Thursday) 💻
+
+1. [Type predicate](https://typescript-exercises.github.io/#exercise=4)    
+2. [Count the smiley faces!](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#using-type-predicates)	    
+``` Typescript 
+export function countSmileys(arr: string[]) {
+  let smileys = [":)",";)",":-)",";-)",";~)",":~)",":D",";D",":-D",":~D",";-D",";~D"];
+  let count = 0;
+
+  for (var i=0; i<arr.length; i++){
+    for (var j=0; j<smileys.length; j++){
+      if (arr[i]===smileys[j]){
+        count++;
+       }
+    }
+  }
+return count;
+}	    
 ```
+
+3.[Human Readable Time](https://www.codewars.com/kata/52685f7382004e774f0001f7)
+	    
+``` Typescript
+	    
+export function countSmileys(arr: string[]) {
+  let smileys = [":)",";)",":-)",";-)",";~)",":~)",":D",";D",":-D",":~D",";-D",";~D"];
+  let count = 0;
+
+  for (var i=0; i<arr.length; i++){
+    for (var j=0; j<smileys.length; j++){
+      if (arr[i]===smileys[j]){
+        count++;
+       }
+    }
+  }
+return count;
+}
+```
+	    
+	
+	    
+# WEEK 9
+
+
+# Week challenges (Monday) 💻
+
+1. What is Node js on my own words. 
+
+Node js is a runtime environment created on 2012. It's a tool mostly used for backend development that can run server-side code without having to use a completely different programming language. Node js is an open-source environment that runs NPM packages and there are over 1,000,000 open source packages that can be used for free. This means that anyone can contribute to the vast diversity of packages offered by NPM without having to create packages or code by ourselves, instead having pre-loaded packages that will allow programmers to not work from scratch. You can stall react and typescript with the NPM package. 
+
+# Week challenges (Tuesday) 💻
+
+1. What is Node js on my own words. 
+
+Node js is a runtime environment created on 2012. It's a tool mostly used for backend development that can run server-side code without having to use a completely different programming language. Node js is an open-source environment that runs NPM packages and there are over 1,000,000 open source packages that can be used for free. This means that anyone can contribute to the vast diversity of packages offered by NPM without having to create packages or code by ourselves, instead having pre-loaded packages that will allow programmers to not work from scratch. You can stall react and typescript with the NPM package. 
+
+2. Answer the question: What is the V8 Javascript Engine? (Use your own words)
+
+The V8 Javascript engine is the one in charge or running google chrome. It's the engine that runs javascript on the browser, making javascript more efficient and allowing node js environment to thrive and make node js an efficient tool for server code.  V8 is constantly evolving making it more competitive and better day by day. 
+
+3. Answer the question: What is NVM and Why is it useful for Node.JS developers?
+
+<h2>What is NVM</h2>
+NVM stands for node version manager and the purpose of NVM is to have multiple versions of Node js. Several versions of Node js wor in different ways, hence the need to have the NVM to swtich from version to version. 
+
+<h2>Why is it useful for developers</h2>
+
+To sum it up, NVM allows users to:
+
+* Locally download any of the remote Long Term Support (LTS) versions of Node.js with a simple command.
+* Easily switch between multiple versions of Node.js, right from the command line.
+* Set up aliases to switch between different downloaded versions of Node.js with ease.
+
+This allows developers to be more productive and know what version of Node js they need to work on. 
+
+4. 
+
+5. 
+
+6. Differences between CommonJS modules vs ES modules
+
+- Common JS modules are synchronous, meaning that there are limitations when writing code with common js modules because modules have got to be processed one by one. Whereas ES modules has an asynchronous nature which is better for performance, but might not work for smaller applications. Common JS works with require (), and module.export to export module exports. ES modules is more adapted for newer versions of Node js. Common JS is more suited for older versions of node js. 
+
+7. Create your own Local Node.JS module. The module must contain a function that calculates
+the sum of two numbers. Use the previously created function in another file in any way.
+
+ES module for addition: 
+
+import {add} from './util.mjs
+
+console.log(add(5,5)) //10 
+
+8. Watched this video about the Client-Server architecture
+
+I understood the relationship between client-server and the process from the beginning to the end. The user (client) inputting data and the server getting the information from the request that is sent through AJAX or HTTPS, then sent to the data base which whatever programming language we use and approving that  
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+	
+
 Week challenges (Wednesday) 💻
 	
 
