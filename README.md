@@ -2710,6 +2710,12 @@ export function fromBase64(str: string): string {
 ```
 
 5. 	
+
+
+# WEEK 8
+
+1. Watched video about web design()
+2. [Print my name](http://127.0.0.1:5500/printmyname.html)
 	    
 # WEEK 9
 
