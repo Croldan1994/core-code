@@ -2715,7 +2715,226 @@ export function fromBase64(str: string): string {
 # WEEK 8
 
 1. Watched video about web design()
-2. [Print my name](http://127.0.0.1:5500/printmyname.html)
+2. Print my name
+``` HTML	    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code code exercise 1</title>
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+body {
+  font-family: 'Muli', sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  line-height: 1.58;
+  letter-spacing: -.003em;
+  font-size: 20px;
+  padding: 70px;
+}
+
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 38px;
+  line-height: 1.15;
+  letter-spacing: -.02em;
+  color: rgba(0, 0, 0, 0.8);
+  -webkit-font-smoothing: antialiased;
+}
+    </style>
+</head>
+<body>
+    <h1>
+       <b>My name is Carlos Roldan</b>
+    </h1>
+</body>
+</html>
+
+```	    2. Create a webpage and set its title to "CoreCode Bootcamp".
+
+``` html
+<!DOCTYPE html>
+<html>
+<title>CoreCode Bootcamp</title>
+<style> 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+</style>
+<body>
+    
+<h1>CoreCode Bootcamp</h1>
+
+<p>This is my very first website with html.</p>
+</body>
+</html> 	    
+``` 
+3. Create a webpage that prints what you like the most about programming and give it a title of your choice.
+
+``` Html
+<!DOCTYPE html>
+<html>
+<title>CoreCode Bootcamp</title>
+<style> 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+</style>
+<body>
+    
+<h1>CoreCode Bootcamp</h1>
+
+<p>This is my very first website with html.</p>
+
+</body>
+</html>	
+	    
+```
+4. Create a webpage that prints what you like the most about programming and give it a title of your choice.
+
+``` Html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+body {
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%
+);
+font-family: 'Quicksand', sans-serif;
+color: white;
+};
+
+</style>
+</head>
+
+<title>What I like about programming</title>
+<body>
+
+<h1>Baby steps into coding</h1>
+
+<p>What I like the most about programming is that it helps you to think about more options and solutions not only by 
+checking bugs, but also gives you a wider perspective of how to deal with problems. Remote work is also a great perk and my interest is web development
+I would love to create beautiful websites and get creative with them, the visual aspect of coding is what makes it beautiful. 
+Learning how to code is hard, but as with everything, practice will allow you to master this great skill and of course never stop learning.
+</p>
+
+</body>
+</html>	   
+``` 
+
+# Week challenges (Tuesday) 💻	    
+
+1. Create a webpage that prints the numbers 1 - 10, each number being a different color. (No JS/TS)
+
+``` Html	    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+body {
+text-align: center;
+background-color: green;   
+}
+
+h1 {
+color: greenyellow; 
+font-family: 'Quicksand', sans-serif;
+font-size: 2em;
+}
+h2 {
+color: brown; 
+font-family: 'Quicksand', sans-serif; 
+font-size: 2em;
+}
+
+h3 {
+color: salmon;
+font-family: 'Quicksand', sans-serif;
+font-size: 2em;
+}
+
+h4 {
+color: blanchedalmond;
+font-family: 'Quicksand', sans-serif; 
+font-size: 2em;
+}
+
+h5 {
+color: blueviolet;  
+font-family: 'Quicksand', sans-serif;  
+font-size: 2em;
+}
+
+h6 {
+color: goldenrod; 
+font-family: 'Quicksand', sans-serif; 
+font-size: 2em;
+}
+
+.p1{
+color: chocolate;   
+font-family: 'Quicksand', sans-serif; 
+font-size: 2em;
+}
+
+.p2{
+color: cornflowerblue;
+font-family: 'Quicksand', sans-serif;
+font-size: 2em;
+}
+
+.p3{
+color: rgb(19, 143, 137);
+font-family: 'Quicksand', sans-serif; 
+font-size: 2em;
+}
+
+.p4{
+color: rgb(90, 14, 43);
+font-family: 'Quicksand', sans-serif;
+font-size: 2em;
+}
+
+</style>
+<body>
+<div>
+    <h1>One</h1>
+    <h2>Two</h2>
+    <h3>Three</h3>
+    <h4>Four</h4>
+    <h5>Five</h5>
+    <h6>Six</h6>
+    <p class="p1">Seven<p>
+    <p class="p2">Eight</p>
+    <p class="p3">Nine</p>
+    <p class="p4">Ten</p>
+</div>
+</body>
+</html>	
+	    
+```
 	    
 # WEEK 9
 
