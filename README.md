@@ -2756,7 +2756,8 @@ h1 {
 </body>
 </html>
 
-```	    2. Create a webpage and set its title to "CoreCode Bootcamp".
+```	    
+2. Create a webpage and set its title to "CoreCode Bootcamp".
 
 ``` html
 <!DOCTYPE html>
@@ -3020,6 +3021,12 @@ font-size: 2em;
 </body>
 </html>
 ```
+Week challenges (Wednesday) 💻
+
+1. Create some links to various search engines.
+
+
+
 	    
 # WEEK 9
 
