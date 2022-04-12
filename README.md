@@ -2935,6 +2935,91 @@ font-size: 2em;
 </html>	
 	    
 ```
+	
+2. Create a webpage that prints two lists with any information you want. One list should be an ordered list, the other list should be an unordered list.
+
+``` Html	    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         body {
+          background-color: brown;     
+          ;
+           } 
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Football leagues</h1>
+    <h2>Serie A</h2>
+    <ol>
+        <li>Inter</li>
+        <li>Milan</li>
+        <li>Juventus</li>
+        <li>As Roma</li>
+    </ol>
+   <h2>Premier League</h2>
+    <ul>
+        <li>Liverpool</li>
+        <li>Manchester United</li>
+        <li>Manchester City</li>
+        <li>Chelsea</li>
+    </ul>
+</body>
+</html>
+``` 
+3. Create a webpage that prints some random paragraphs (https://loremipsum.io/es/) and give them some titles using different header sizes.
+	    
+``` Html
+	    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Paragrahps with placeholder text</title>
+</head>
+<body>
+    <section>
+    <h1>Lorem Ipsum</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+
+    <section>
+    <h2>Paragraph 2</h2>
+     <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur a erat nam at.
+        Ante metus dictum at tempor commodo ullamcorper a. Mollis aliquam ut porttitor leo. Massa ultricies mi quis hendrerit dolor. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Elementum pulvinar etiam non quam lacus suspendisse faucibus interdum. Vel turpis nunc eget lorem dolor. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Eu facilisis sed odio morbi quis commodo odio. Id venenatis a condimentum vitae sapien pellentesque. Amet luctus venenatis lectus magna fringilla. Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum. 
+        Diam sit amet nisl suscipit.  
+     </p>   
+    </section>
+
+    <section>
+        <h3>Paragraph 3</h3>
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Mauris a diam maecenas sed enim ut. Facilisis gravida neque convallis a cras semper auctor. 
+            Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. 
+            Et malesuada fames ac turpis egestas. Egestas congue quisque egestas diam in arcu cursus euismod quis.
+            At varius vel pharetra vel turpis nunc. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium. 
+            Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. 
+            Cum sociis natoque penatibus et magnis dis parturient. Ultricies lacus sed turpis tincidunt id aliquet. 
+            Nunc faucibus a pellentesque sit amet porttitor.
+            Ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus.  
+         </p>   
+        </section>  
+
+</body>
+</html>
+```
 	    
 # WEEK 9
 
