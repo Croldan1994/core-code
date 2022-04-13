@@ -3107,7 +3107,62 @@ Week challenges (Wednesday) 💻
 	
 3. Display an image that when clicked will link to a website of your choice (should be opened in a new window).
 
-
+``` html 
+	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Container">
+      <div class="button">
+        <button id="btn">Change background color</button>
+        <script src="background.js"></script>
+        
+      </div>
+    <!--Image #1-->
+    <div class="img1">
+       <figure>
+        <a href="https://www.imdb.com/title/tt1710308/" target="_blank"><img src="https://wallpapercave.com/wp/nzhzv1x.jpg" width="400" height="300"  alt="Mordecai and Rigby"> </a>
+              <figcaption>Mordecai and Rigby</figcaption>
+        </figure>
+    </div>    
+    <!--Image #2-->
+    <div class="img2">
+     <figure>
+      <a href="https://dexterslab.fandom.com/wiki/Dexter" target="_blank"><img src="https://i.pinimg.com/originals/b4/64/7a/b4647a86c2815865799914565ce364a2.jpg" width="400" height="300" alt="Dexter's laboratory"></a>
+           <figcaption>Dexter's laboratory is one of the most beloved cartoons</figcaption>
+     </figure>
+    </div>
+    <!--Image #3-->
+    <div class="img3">
+     <figure>
+      <a href="http://www.savewalterwhite.com/" target="_blank"><img src="https://www.seriemaniac.com/wp-content/uploads/2013/10/que-significa-Breaking-Bad.jpg"  width="400" height="300" alt="Breaking Bad Image"></a>   
+        <figcaption>Breaking bad revolutionzed the way of thinking</figcaption>
+    </figure>
+    </div>
+    <!--Image #4-->
+    <div class="img4">
+    <figure>
+      <a href="https://www.marvel.com/tv-shows/loki/1" target="_blank"><img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/online_9.jpg" width="400" height="300" alt="Loki show"></a>
+        <figcaption>One of the MCU's most acclaimed characters</figcaption>
+    </figure>
+  </div>
+    <!--Image #5-->
+   <div class="img5">    
+    <figure>
+      <a href="https://www.netflix.com/gt-en/title/80057281" target="_blank"><img src="https://i.pinimg.com/originals/95/64/cc/9564cc5d91b06c8705bb95ea22b9e940.png" width="400" height="300" alt="Stranger things poster"></a>
+        <figcaption> Stranger things is one of Netflix most popular shows.</figcaption>
+    </figure>
+   </div>
+</body>
+</html>
+	
+```	
 
 
 
