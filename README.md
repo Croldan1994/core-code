@@ -3438,8 +3438,8 @@ I understood the relationship between client-server and the process from the beg
 Week challenges (Wednesday) 💻
 	
 
-
-
+1. [Watched video about API](https://www.youtube.com/watch?v=s7wmiS2mSXY)
+2. Are APIS only available on the Internet?
 
 
 Week challenges (Tuesday) 💻
