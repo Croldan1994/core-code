@@ -3164,17 +3164,211 @@ Week challenges (Wednesday) 💻
 	
 ```	
 
+Week challenges (Thursday) 💻
 
+1. Use a website you created before and give some classes and identifiers to elements. Create some css for them.
+	
+For the websit displaying multiple numbers, I used some inline CSS styling to style my website. I used classes on my P tag and ID as well. 
+	
+``` Html
+	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+body {
+text-align: center;
+background-color: green;   
+}
+
+h1 {
+color: greenyellow; 
+font-family: 'Quicksand', sans-serif;
+font-size: 2em;
+}
+h2 {
+color: brown; 
+font-family: 'Quicksand', sans-serif; 
+font-size: 2em;
+}
+
+h3 {
+color: salmon;
+font-family: 'Quicksand', sans-serif;
+font-size: 2em;
+}
+
+h4 {
+color: blanchedalmond;
+font-family: 'Quicksand', sans-serif; 
+font-size: 2em;
+}
+
+h5 {
+color: blueviolet;  
+font-family: 'Quicksand', sans-serif;  
+font-size: 2em;
+}
+
+h6 {
+color: goldenrod; 
+font-family: 'Quicksand', sans-serif; 
+font-size: 2em;
+}
+
+.p1{
+color: chocolate;   
+font-family: 'Quicksand', sans-serif; 
+font-size: 2em;
+}
+
+.p2{
+color: cornflowerblue;
+font-family: 'Quicksand', sans-serif;
+font-size: 2em;
+}
+
+.p3{
+color: rgb(19, 143, 137);
+font-family: 'Quicksand', sans-serif; 
+font-size: 2em;
+}
+
+#p4{
+color: rgb(90, 14, 43);
+font-family: 'Quicksand', sans-serif;
+font-size: 2em;
+}
+
+</style>
+<body>
+<div>
+    <h1>One</h1>
+    <h2>Two</h2>
+    <h3>Three</h3>
+    <h4>Four</h4>
+    <h5>Five</h5>
+    <h6>Six</h6>
+    <p class="p1">Seven<p>
+    <p class="p2">Eight</p>
+    <p class="p3">Nine</p>
+    <p id="p4">Ten</p>
+</div>
+</body>
+</html>	
+
+```
+
+2. I added JS to change the color of a website dinamically.  
+
+``` Html
+	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Container">
+      <div class="button">
+        <button id="btn">Change background color</button>
+        <script src="background.js"></script>
+        
+      </div>
+    <!--Image #1-->
+    <div class="img1">
+       <figure>
+        <a href="https://www.imdb.com/title/tt1710308/" target="_blank"><img src="https://wallpapercave.com/wp/nzhzv1x.jpg" width="400" height="300"  alt="Mordecai and Rigby"> </a>
+              <figcaption>Mordecai and Rigby</figcaption>
+        </figure>
+    </div>    
+    <!--Image #2-->
+    <div class="img2">
+     <figure>
+      <a href="https://dexterslab.fandom.com/wiki/Dexter" target="_blank"><img src="https://i.pinimg.com/originals/b4/64/7a/b4647a86c2815865799914565ce364a2.jpg" width="400" height="300" alt="Dexter's laboratory"></a>
+           <figcaption>Dexter's laboratory is one of the most beloved cartoons</figcaption>
+     </figure>
+    </div>
+    <!--Image #3-->
+    <div class="img3">
+     <figure>
+      <a href="http://www.savewalterwhite.com/" target="_blank"><img src="https://www.seriemaniac.com/wp-content/uploads/2013/10/que-significa-Breaking-Bad.jpg"  width="400" height="300" alt="Breaking Bad Image"></a>   
+        <figcaption>Breaking bad revolutionzed the way of thinking</figcaption>
+    </figure>
+    </div>
+    <!--Image #4-->
+    <div class="img4">
+    <figure>
+      <a href="https://www.marvel.com/tv-shows/loki/1" target="_blank"><img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/online_9.jpg" width="400" height="300" alt="Loki show"></a>
+        <figcaption>One of the MCU's most acclaimed characters</figcaption>
+    </figure>
+  </div>
+    <!--Image #5-->
+   <div class="img5">    
+    <figure>
+      <a href="https://www.netflix.com/gt-en/title/80057281" target="_blank"><img src="https://i.pinimg.com/originals/95/64/cc/9564cc5d91b06c8705bb95ea22b9e940.png" width="400" height="300" alt="Stranger things poster"></a>
+        <figcaption> Stranger things is one of Netflix most popular shows.</figcaption>
+    </figure>
+   </div>
+</body>
+</html>
+```
+	
+``` javascript
+//access to the html button
+const button = document.getElementById("btn");
+//access to html body
+const body = document.body; 
+
+const colors = ['red', 'green', 'blue', 'yellow', 'pink', 'purple']
+
+//main code that will change the backgound color 
+button.addEventListener('click',changebackBackground)
+
+function changebackBackground(){
+const colorsIndex = Math.floor(Math.random()*colors.length)
+body.style.backgroundColor = colors[colorsIndex]   
+}
+	
+``` 
 	    
 # WEEK 9
 
 
 # Week challenges (Monday) 💻
 
-1. What is Node js on my own words. 
+1. [Watched video about React and got to know that its the most popular library for building interface](https://www.youtube.com/watch?v=N3AkSS5hXMA)
+2. [Watched video of basic introduction about react in 30 minutes](https://www.youtube.com/watch?v=hQAHSlTtcmY)	
+3. React Kata
 
-Node js is a runtime environment created on 2012. It's a tool mostly used for backend development that can run server-side code without having to use a completely different programming language. Node js is an open-source environment that runs NPM packages and there are over 1,000,000 open source packages that can be used for free. This means that anyone can contribute to the vast diversity of packages offered by NPM without having to create packages or code by ourselves, instead having pre-loaded packages that will allow programmers to not work from scratch. You can stall react and typescript with the NPM package. 
+	``` Javascript
+	
+import React from 'react';
+
+
+export const EggList = (props) => {
+  return <ul>{props.eggs.map((egg, index) => <EasterEgg key={index} name={egg}/>)} </ul>
+};
+
+export const EasterEgg = (props) => {
+  const name = props.name;
+  return( <li key={name} >{name}</li>)
+
+};
+	
+```
+	
 
 # Week challenges (Tuesday) 💻
 
@@ -3201,9 +3395,25 @@ To sum it up, NVM allows users to:
 
 This allows developers to be more productive and know what version of Node js they need to work on. 
 
-4. 
+4. Learnt about NodeJS module systems which are 2:
 
-5. 
+CommonJS modules and ECMAscript modules
+	
+In order to call each method we need to do the following:
+	
+Calling require() is used fro commonJS modules. Calling import() is used for ECMAscript module. 
+	
+
+5. Read about the different types of Node.JS modules
+
+Modules in Node.JS can be defined as blocks of code that are encapsulated that communicate with an external application. They are used by programmers due to their reusability and their ability to break down a complex piece of code. 
+	
+Modules are of three types:
+
+- Core Modules
+- local Modules
+- Third-party Modules
+
 
 6. Differences between CommonJS modules vs ES modules
 
