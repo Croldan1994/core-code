@@ -23,6 +23,7 @@
 <p>R// It is helpful because it allows the programmer to understand what the issue is, it allows a programmer to describe the issue in a away it can be understood and then once the problem has been identified, it will be easier to know what functions, conditional statements and syntax to use to solve that problem and translate it into code. 
 ```
 5) Create a pseudocode to calculate the aproximated age of a user base on the year they born, (you can define a variable with the actual year if you need it, like for example i could define Y <-- 2022)
+
 ```
 <p>R//  
 
@@ -39,11 +40,10 @@
 Flowcharts are important because they will allow us to have a structure and a set of steps that our algorithm should take by making it easier to read and understanding when we want to create our code.</p>
 ```
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <h1>Wednesday Assignments</h1>
 
 1. Learn about Decimal, Binary and hexadecimal numbers. 
-```
+
 <p>Binary numbers: Binary numbers are base "2" numbers. They are composed by 0 and 1. We start counting at 0, then 1, then you run out of digits ... so we start back at 0 again, but increase the number on the left by 1.</p>
 
 <p>Decimal numbers: Decimal numbers are base 10 numbers. They start from 0 to 9 but don't include the number 10. After the number 9, we run out of digits. Every digit in a decimal number has a "position", and the decimal point helps us to know which position is which. The position just to the left of the point is the "Ones" position. If we see a "7" there we know it means 7 ones. Every position further to the left is 10 times bigger, and every position further to the right is 10 times smaller. But notice something interesting: there is no symbol for "ten". "10" is actually two symbols put together, a "1" and a "0".</p> 
@@ -120,7 +120,7 @@ This is how it's done.
 
 We would start from the bottom to the top to get the number in hexadecimal and the final result is <b>CAFE(16)</b>
 
-```
+
 
 5. Base on the examples and the guide of the low-level language: 
  
@@ -171,7 +171,7 @@ We would start from the bottom to the top to get the number in hexadecimal and t
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
-<h1>Week challenges  Thursday Assignments.</h1>
+# Thursday Assignments.
 
 1. Search for real word applications of Javascript
 ```
