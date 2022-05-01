@@ -47,10 +47,10 @@ We are always open to feedback to keep co-creating and improving the experience 
 ## 6. Technologies
 
 - Week 1 : [Introduction to programming & Javascript](https://github.com/Croldan1994/core-code/tree/main/Week%201%20-%20%20Introduction%20to%20programming%20%26%20Javascript)
-- Week 2 : [Javascript](src/technologies/2022/week2)
-- Week 3 : [Javascript](src/technologies/2022/week3)
-- Week 4 : [npm,npx & Typescript](src/technologies/2022/week4)
-- Week 5 : [Typescript](src/technologies/2022/week5)
+- Week 2 : [Javascript](https://github.com/Croldan1994/core-code/tree/main/Week%202%20-%20Javascript)
+- Week 3 : [Javascript](https://github.com/Croldan1994/core-code/blob/main/Week%203%20-%20Javascript/Week3.md)
+- Week 4 : [npm,npx & Typescript](https://github.com/Croldan1994/core-code/tree/main/Week%204%20-%20NPM%2CNPX%2CTypescript)
+- Week 5 : [Typescript]()
 - Week 6 : [Typescript](src/technologies/2022/week6)
 - Week 7 : [Typescript](src/technologies/2022/week7)
 - Week 8 : [HTML & CSS](src/technologies/2022/week8)
